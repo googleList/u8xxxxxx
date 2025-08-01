@@ -1,0 +1,58 @@
+ 
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="">
+  <title>9U</title>
+  <link rel="stylesheet" as="style" href="assesr/style.css">
+  <link rel="stylesheet" href="assesr/bootstrap.min.css" >
+
+<script src="assesr/688559166908947" async=""></script><script async="" src="assesr/fbevents.js"></script>
+
+ </head>
+ 
+<body> 
+ 
+  <main class="d-lg-flex">
+    <section class="position-relative d-lg-inline-block mx-lg-auto"> 
+
+
+      <div class="position-relative">
+        <img src="assesr/bg.png" id="bg" alt="bg"> 
+        <div class="position-absolute text-center w-100 main-title" style="top:20%;"> 
+           <h2 class="title">加上新人独享礼遇</h2>
+           <p class="main-text">欢迎加入互动竞技新纪元</p>
+        </div>
+  
+        <div class="position-absolute w-100 text-center element"> 
+            <img src="assesr/element.gif" id="element" alt="element"> 
+        </div>
+   
+        <div class="position-absolute w-100 text-center redirect-btn">
+          <a id="redirectLink" href="https://t.me/play9ubot"> 
+              <img src="assesr/btn.png" id="tekan" alt="button2"> 
+          </a>
+        </div>
+      </div>
+   
+    </section>
+
+
+  </main>
+
+  <script src="assesr/jquery-3.6.4.min.js"></script>
+  <script src="assesr/script.js"></script>
+  <script>
+
+    $(document).ready(function () { 
+      let currentURL = window.location.href; 
+      if (currentURL.includes('?')) { 
+        let redirectURL = "/assets/load.html?" + currentURL.split('?')[1];
+        $('#redirectLink').attr('href', redirectURL);
+      }
+    })
+
+  </script>
+
+
+</body></html>
